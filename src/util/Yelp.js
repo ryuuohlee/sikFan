@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const apiKey = process.env.SECRET_KEY ;
+let apiKey = process.env.REACT_APP_SECRET_KEY;
 
 const Yelp = {
   searchYelp(term, location, sortBy) {
@@ -9,7 +9,7 @@ const Yelp = {
         Authorization: `Bearer ${apiKey}`
       }
     }).then(response => {
-        return response.json()
+      return response.json()
       }).then((jsonResponse) => {
         if(jsonResponse.businesses) {
           return jsonResponse.businesses.map(((business) => {
