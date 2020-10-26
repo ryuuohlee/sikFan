@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About
+
+This project is using React to display a webpage to search for restaurants around the location you wish to search using the YelpAPI.
+
 ## Available Scripts
 
 In the project directory, you can run:
